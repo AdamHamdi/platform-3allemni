@@ -1,0 +1,10 @@
+.dash-container{
+    height: 100vh;
+    .dash-sidenav {
+        width: 300px;
+       &:not(.mat-drawer-opened)  {
+            width: 90px!important;
+          }
+    }
+
+}

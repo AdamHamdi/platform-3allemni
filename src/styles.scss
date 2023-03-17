@@ -28,10 +28,12 @@
     height: 48px;
 }
 .btn-login{
-    background-color: #10d477;
+    background-color: #56a5b0;
     border-radius: 19px !important;
     height: 48px;
     color: white;
+    font-size: 19px;
+    font-weight: 600;
 }
 .card-login{
     border-radius: 30px;
@@ -44,9 +46,20 @@
     }
      
 }
+.text-melted{
+    color: #555361;
+}
 .h-100vh{
     height: 100vh;
 }
 .font-weight-700{
     font-weight: 700;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+label{direction: rtl;}
+ 
+.mat-drawer:not(.mat-drawer-opened) .dash-sidenav {
+    width: 90px!important;
+  }
