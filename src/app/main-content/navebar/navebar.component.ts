@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import ApexCharts from 'apexcharts';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  selector: 'app-navebar',
+  templateUrl: './navebar.component.html',
+  styleUrls: ['./navebar.component.scss']
 })
-export class MainComponent {
+export class NavebarComponent {
   dropdown =false
   notif =false
   navHide =false
