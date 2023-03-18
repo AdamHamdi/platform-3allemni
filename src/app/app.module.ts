@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,7 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatButtonModule} from '@angular/material/button';
-import { NavbarComponent } from './navbar/navbar.component';
+import { MainComponent } from './main-content/main.component';
+ 
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    NavbarComponent
+    MainComponent,
+     
+    
   ],
   imports: [
     BrowserModule,
@@ -28,6 +31,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatButtonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
