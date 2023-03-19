@@ -19,9 +19,10 @@ body {
 }
 
 .slegon {
+    padding: 30px ;
     @media(max-width:768px) {
 
-        padding: 40px !important;
+        padding: 20px !important;
 
         h3 {
             font-size: 1.35rem !important;
@@ -43,14 +44,17 @@ body {
     font-size: 19px;
     font-weight: 600;
 }
-
+.bg-green{background-color: #56a5b0;}
+.bg-orange{background-color: #dc6235;}
 .card-login {
     border-radius: 30px;
 
     padding: 35px 10px 90px;
     background: #f6fbfe;
     box-shadow: 0 1px 24px rgb(0 0 0 / 6%), 0 8px 22px rgb(0 0 0 / 6%), 0 8px 10px rgb(0 0 0 / 5%);
-
+    @media(max-width:768px) {
+        padding: 25px 10px 50px!important;
+    }
    
 
 }
@@ -136,9 +140,11 @@ label {
     cursor: pointer;
 }
 
-.nav-link{
+.nav-item{
     font-size: 19px;
-    &:hover,&:focus{
+    &:hover,
+    &:focus,
+    &.active{
         text-decoration: underline;
     }
 }
